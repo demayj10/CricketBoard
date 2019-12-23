@@ -1,0 +1,46 @@
+.scorecard {
+  height: 82vh;
+  width: 40vw;
+  margin: 0.5em 0;
+}
+
+.team-name {
+  margin: auto !important;
+  display: block !important;
+  width: 96%;
+}
+
+.edit-icon {
+  color: #989898 !important;
+}
+
+.button-list {
+  padding: 2px 0 0 !important;
+  height: 77vh;
+}
+
+.list-item {
+  padding: 0 2px !important;
+  margin: 0.25em 0 1.5em;
+}
+
+.spot-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center !important;
+}
+
+@media screen and (max-height: 700px) {
+  .list-item {
+    padding: 0 2px !important;
+    margin: 0.25em 0 1.2em;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .list-item {
+    padding: 0 2px !important;
+    margin: 0.25em 0 1em;
+  }
+}

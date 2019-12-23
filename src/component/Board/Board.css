@@ -1,0 +1,56 @@
+#board-background {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+}
+
+#topBar {
+  background-color: #282828;
+}
+
+#title-container {
+  text-align: center;
+  width: 100%;
+}
+
+#title {
+  font-size: 7vw !important;
+  font-weight: 700;
+}
+
+#score-container {
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#numbers-list {
+  height: 78vh;
+  margin-top: 2em !important;
+  text-align: center !important;
+}
+
+.values-list {
+  height: 78vh;
+}
+
+.value-text-container {
+  margin: 0.5em 0 0;
+  padding: 0 5px !important;
+  text-align: center !important;
+  height: 10vh;
+}
+
+.value-text {
+  font-size: 10vw !important;
+  font-weight: 600;
+}
+
+#bottomBar {
+  background-color: #282828;
+}
+
+.bottom-buttons {
+  color: #ffffff !important;
+}
