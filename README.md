@@ -7,5 +7,5 @@ This is a React built web app made for vertical-aligned mobile devices to act as
 - Undo Button
 - Clear board button
 
-# Site
+# Link
 https://demayj10.github.io/CricketBoard/
