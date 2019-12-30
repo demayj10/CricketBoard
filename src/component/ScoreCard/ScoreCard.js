@@ -32,32 +32,7 @@ export class ScoreCard extends Component {
   };
 
   handleChange = input => e => {
-    console.log(input);
-    console.log(e.target);
     this.setState({ [input]: e.target.value });
-  };
-
-  addPoint = async (value, num) => {
-    let newSpots = this.state.spots;
-    let valuePair = newSpots.filter(vp => {
-      return vp.value === value;
-    })[0];
-    let points = valuePair.points;
-    if (points < 3) {
-      points++;
-    }
-    valuePair.points = points;
-    let updated = newSpots.filter(vp => {
-      return vp.value !== value;
-    });
-    updated.push(valuePair);
-    updated.sort(function(a, b) {
-      return a.id - b.id;
-    });
-
-    this.setState({
-      spots: updated
-    });
   };
 
   render() {

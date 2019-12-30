@@ -22,7 +22,8 @@ export class ButtonItem extends Component {
     this.setState({
       loading: true
     });
-    await this.context.addPoint(value, num);
+
+    await this.context.updateScore(value, num, true);
     this.setState({
       loading: false
     });

@@ -42,7 +42,7 @@ export class Board extends Component {
   static contextType = GlobalContext;
   render() {
     const { team1, team2 } = this.context.data;
-    const { clearBoard } = this.context;
+    const { undoLastAction, clearBoard } = this.context;
 
     if (team1 === null || team2 === null) {
       return <CircularProgress />;
@@ -82,6 +82,7 @@ export class Board extends Component {
           <BottomNavigationAction
             label="Undo"
             icon={<Replay />}
+            onClick={undoLastAction}
             className="bottom-buttons"
           />
           <BottomNavigationAction
