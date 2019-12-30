@@ -32,7 +32,9 @@ export class ScoreCard extends Component {
   };
 
   handleChange = input => e => {
-    this.setState({ [input]: e.target });
+    console.log(input);
+    console.log(e.target);
+    this.setState({ [input]: e.target.value });
   };
 
   addPoint = async (value, num) => {
@@ -69,7 +71,7 @@ export class ScoreCard extends Component {
             <TextField
               value={teamName}
               className="team-name"
-              onChange={this.handleChange("team")}
+              onChange={this.handleChange("teamName")}
             ></TextField>
 
             <List className="button-list">
